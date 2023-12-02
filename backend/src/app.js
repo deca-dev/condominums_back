@@ -31,10 +31,6 @@ db.sync()
 app.use('/api/v1/users', userRouter)
 app.use('/api/v1/auth', authRouter)
 
-
-
-
-
 app.get('/', (req, res) => {
     res.status(200).json({
         message: 'OK!',

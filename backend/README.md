@@ -1,4 +1,3 @@
-#Recipes API
 
 - Express
 - PostgreSQL
