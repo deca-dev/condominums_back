@@ -35,6 +35,8 @@ db.sync()
         console.log(err)
     })
 
+    initModels();
+
 
 
 app.get('/api/v1', (req, res) => {
