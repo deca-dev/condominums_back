@@ -1,4 +1,4 @@
-const {getAllComplaintController, createNewComplaint, patchComplaintController, delComplaintController} = require('./Complaint.controllers')
+const {getAllComplaintController, createNewComplaint, patchComplaintController, delComplaintController} = require('./complaint.controllers')
 
 
 const getAllComplaintHandler = async(req, res) => {
