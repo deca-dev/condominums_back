@@ -50,7 +50,11 @@ const registerUser = (req, res) => {
         urlImage
       })
       .then((data) => {
+<<<<<<< HEAD
         res.status(201).json(data.dataValues);
+=======
+        res.status(201).json(data);
+>>>>>>> origin/main
       })
       .catch((err) => {
         res.status(400).json({
@@ -114,7 +118,11 @@ const getMyUser = (req, res) => {
   usersControllers
     .getUserById(id)
     .then((data) => {
+<<<<<<< HEAD
       res.status(200).json(data.dataValues);
+=======
+      res.status(200).json(data);
+>>>>>>> origin/main
     })
     .catch((err) => {
       res.status(400).json({ message: err.message });
@@ -221,6 +229,7 @@ const deleteMyReservation = (req, res) => {
       res.status(400).json({ message: 'You cannot delete this reservation' });
     });
 };
+<<<<<<< HEAD
 //? Admin - Routes Services
 const adminRegisterUser = (req, res) => {
   const { firstName, lastName, email, phone, birthday } = req.body;
@@ -254,6 +263,8 @@ const adminRegisterUser = (req, res) => {
     });
   }
 };
+=======
+>>>>>>> origin/main
 
 module.exports = {
   getAllUsers,
@@ -266,6 +277,10 @@ module.exports = {
   deleteMyUser,
   getMyReservations,
   editMyReservation,
+<<<<<<< HEAD
   deleteMyReservation,
   adminRegisterUser
+=======
+  deleteMyReservation
+>>>>>>> origin/main
 };
