@@ -1,9 +1,5 @@
 
-<<<<<<< HEAD
 const {getAllCondoController, createNewCondo, patchCondoController, delCondoController} = require('./condominiums.controllers')
-=======
-const {getAllCondoController, createNewCondo, patchCondoController, delCondoController} = require('../../core/condominiums/condominiums.controllers')
->>>>>>> origin/main
 const getAllCondoHandler = async(req, res) => {
     const getAllCondo = await getAllCondoController();
     if(getAllCondo){

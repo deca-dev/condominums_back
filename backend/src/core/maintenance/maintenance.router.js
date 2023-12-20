@@ -1,9 +1,5 @@
 const router = require('express').Router();
-<<<<<<< HEAD
 const maintenanceServices = require('./maintenance.services')
-=======
-const maintenanceServices = require('../../core/maintenance/maintenance.services')
->>>>>>> origin/main
 
 //? Main Route
 
