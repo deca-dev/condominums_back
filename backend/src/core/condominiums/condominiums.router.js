@@ -1,9 +1,5 @@
 const router = require('express').Router();
-<<<<<<< HEAD
 const {postCondoHandler, getAllCondoHandler, updateCondoHandler, deleteCondoHandler} = require('../../core/condominiums/condominiums.services')
-=======
-const {postCondoHandler, getAllCondoHandler, updateCondoHandler, deleteCondoHandler} = require('./condominiums.services')
->>>>>>> origin/main
 
 //? Main Route
 

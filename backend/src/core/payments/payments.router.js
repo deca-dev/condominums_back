@@ -4,11 +4,7 @@ const {
   getAllPaymentsHandler,
   updatePaymentsHandler,
   deletePaymentsHandler
-<<<<<<< HEAD
 } = require('../payments/payments.services');
-=======
-} = require('./payments.services');
->>>>>>> origin/main
 
 //? Main Route
 

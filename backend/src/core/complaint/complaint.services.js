@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 const {getAllComplaintController, createNewComplaint, patchComplaintController, delComplaintController} = require('./Complaint.controllers')
-=======
-const {getAllComplaintController, createNewComplaint, patchComplaintController, delComplaintController} = require('./complaint.controllers')
->>>>>>> origin/main
 
 
 const getAllComplaintHandler = async(req, res) => {

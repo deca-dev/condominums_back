@@ -3,11 +3,7 @@ const {
   createNewPayments,
   patchPaymentsController,
   delPaymentsController
-<<<<<<< HEAD
 } = require('../payments/payments.controllers');
-=======
-} = require('./payments.controllers');
->>>>>>> origin/main
 const getAllPaymentsHandler = async (req, res) => {
   const getAllPayments = await getAllPaymentsController();
   if (getAllPayments) {
