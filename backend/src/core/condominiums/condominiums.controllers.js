@@ -1,5 +1,6 @@
 const condos = require('../../models/condominiums.models');
 const uuid = require('uuid');
+<<<<<<< HEAD
 const Users = require('../../models/users.model');
 //const db = require('../utils/database')
 
@@ -30,6 +31,20 @@ const createNewCondo = async (userId, tower, room) => {
     return await condos.create({
       id: uuid.v4(),
       userId,
+=======
+//const db = require('../utils/database')
+
+const getAllCondoController = async () => {
+  const data = await condos.findAll();
+  return data;
+};
+
+const createNewCondo = async (user_id, tower, room) => {
+  if (tower && room) {
+    return await condos.create({
+      id: uuid.v4(),
+      user_id,
+>>>>>>> origin/main
       tower,
       room
     });

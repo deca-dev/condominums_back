@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const {
   getAllCondoController,
   createNewCondo,
@@ -11,12 +12,28 @@ const getAllCondoHandler = async (req, res) => {
   } else {
     res.status(404).json({ message: 'Condominium not found' });
   }
+=======
+
+const {getAllCondoController, createNewCondo, patchCondoController, delCondoController} = require('./condominiums.controllers')
+const getAllCondoHandler = async(req, res) => {
+    const getAllCondo = await getAllCondoController();
+    if(getAllCondo){
+      res.status(200).json(getAllCondo);
+    }else{
+      res.status(404).json({message:"Condominium not found"});
+    }
+>>>>>>> origin/main
 };
 
 const postCondoHandler = async (req, res) => {
   try {
+<<<<<<< HEAD
     const { userId, tower, room } = req.body;
     const newCondo = await createNewCondo(userId, tower, room);
+=======
+    const { user_id, tower, room } = req.body;
+    const newCondo = await createNewCondo(user_id, tower, room);
+>>>>>>> origin/main
     res.status(201).json({ newCondo });
   } catch (error) {
     res.status(400).json({ error: error.message });

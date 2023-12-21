@@ -41,7 +41,11 @@ db.sync()
 
 app.get('/api/v1', (req, res) => {
   res.status(200).json({
+<<<<<<< HEAD
     message: `Documentation available at: http://localhost:${port}/api/v1/docs`,
+=======
+    message: `Documentation available at: http://localhost:${port}/api/v1/docs or https://nc-condominiums-backend.onrender.com/api/v1/docs`,
+>>>>>>> origin/main
     users: `localhost:${port}/api/v1/users`,
     login: `localhost:${port}/api/v1/auth/login`,
     amenities: `localhost:${port}/api/v1/amenities`,
