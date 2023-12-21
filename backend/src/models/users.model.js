@@ -45,7 +45,7 @@ const Users = db.define('users', {
   role: {
     type: DataTypes.STRING,
     allowNull: false,
-    defaultValue: 'normal'
+    defaultValue: 'inquilino'
   },
   status: {
     type: DataTypes.STRING,

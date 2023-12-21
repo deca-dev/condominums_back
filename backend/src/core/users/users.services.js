@@ -76,9 +76,9 @@ const registerUser = (req, res) => {
 const patchUser = (req, res) => {
   //? Password change will be through email request
   const id = req.params.id;
-  const { firstName, lastName, phone, birthday, gender, country } = req.body;
+  const { firstName, lastName, phone, birthday, gender, country, role } = req.body;
   usersControllers
-    .updateUser(id, { firstName, lastName, phone, birthday, gender, country })
+    .updateUser(id, { firstName, lastName, phone, birthday, gender, country, role })
     .then((data) => {
       if (data[0]) {
         res.status(200).json({ message: 'User edit correctly' });
